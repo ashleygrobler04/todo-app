@@ -34,7 +34,7 @@
                             <div>
                                 <input onChange={this.handleChange} value={this.state.input} />
                                 <button onClick={this.addTask}>Add Task</button>
-<button onclick={this.clearinput}>Clear input</button>
+<button onClick={this.clearInput}>Clear input</button>
 
                             </div>
                         </div>
@@ -51,9 +51,9 @@
                     this.setState(state => ({
                         tasks: [...state.tasks, state.input]
                     }))
-clearinput=()=>{
-this.setState(state => ({
-this.State.input = ''
+clearInput=()=>{
+this.setState (state =>( {
+input: ""
 }))
 }
                 }
